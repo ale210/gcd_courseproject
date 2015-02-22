@@ -1,9 +1,8 @@
 zip_filename <- "data.zip"
 if(!file.exists(zip_filename)) {
     file.download("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", zip_filename)
-    unzip("data.zip")
 }
-
+unzip("data.zip")
 
 root_dir_name <- "UCI HAR Dataset"
 
